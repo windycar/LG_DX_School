@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action 받는 컴퓨터의 주소를 받는다 /method -> get,post 방식 
+    -->
+    <!--
+        form : 사용자에 입력값을 묶어서 관리하는 태그
+            - 서버에게 값을 전달할때 사용하는 태그
+        input : 사용자에게 입력라는 공간을 제공하는 태그
+            * 키포인트: type 통해서 모습 결정     
+        * 중요한점 : 반드시 input 태그는 form 안에 작성해야 한다     
+     -->
+    <form action="/서버의 주소" method="post">
+        ID : <input type="text" name="id" id="" placeholder="ID를 입력하세요." required><br> <!-- 닫는 태그가 없는 태그 (=홀태그 -->
+        PW : <input type="password" name='pw' maxlength="10" required><br>
+        PW 확인 : <input type="password" name="pw2" maxlength="10" required><br>
+
+        <br>
+
+        <!-- checkBox -->
+        <p>좋아하는 커피를 모두 골라주세요.</p>
+        아메리카노 <input type="checkbox" name="coffee" value="ame">
+        카페라떼 <input type="checkbox" name="coffee" value="latte">
+        <!-- radio -->
+        <p>성별을 골라주세요</p>
+        남성 <input type="radio" name="gender" value="men">
+        여성 <input type="radio" name="gender" value="women">
+        <br>
+        <br>
+
+        <!-- 제출 및 초기화  
+         제출 및 초기화 되는 정보는 form 태그 시작부터 끝까지 
+         위치는 form 태그안에 -->
+
+        <input type="submit" value="로그인하기">
+        <input type="reset" name="" id="">
+        <br><br><br>
+
+
+        <!-- select 태그 -->
+         <select>
+            <option value="naver">네이버</option>
+            <option value="daum">다음</option>
+            <option value="google">구글</option>
+         </select>
+        <br><br><br>
+        <input type="file"><br><br>
+        <input type="color"><br>
+        <input type="range">
+        <input type="date" name="" id="">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
