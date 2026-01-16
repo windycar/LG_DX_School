@@ -1,0 +1,19 @@
+div {
+    border: 20px solid #dddddd;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+
+    background-color: lightskyblue !important;
+}
+
+
+.cb {
+    box-sizing: content-box;
+    border-style: inset;
+}
+
+.bb {
+    box-sizing: border-box;
+    border-style: outset;
+}
