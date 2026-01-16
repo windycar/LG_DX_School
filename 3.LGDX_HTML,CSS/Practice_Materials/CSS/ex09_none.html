@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        none : 화면에 보이지 않게 숨김
+        block: 화면에 나타나게 만들기
+        
+        */
+        .ans{
+            display: none;
+        }
+        .qes:hover+.ans{
+            display: block;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <span class="qes">Q : 오늘은 무슨 요일인가요?</span>
+    <span class="ans">A : 금요일</span>
+    <br><br>
+    <span class="qes">Q : 우리반 구호는 뭔가요 ?</span>
+    <span class="ans">A : 5기 갓!생!</span>
+
+
+</body>
+</html>

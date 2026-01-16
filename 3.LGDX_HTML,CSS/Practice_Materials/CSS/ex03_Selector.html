@@ -1,0 +1,58 @@
+<!-- 선택자 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        선택자 : 특정 태그 지칭 하는 방법
+        *핵심 : 선택자는 우선순위 존재
+        *우선순위는 범위가 좁으면 높아진다
+        *전체<태그
+
+        1. 전체선택자(*) = 모든 태그에게 스타일을 부여할 때 활용 
+        2. 태그선택자(태그명) = 특정 태그에게 스타일을 부여할 때 활용
+
+
+
+         */
+        
+        *{
+            color: gray;
+        }
+        li{
+            color: red;
+        }
+        /* . -> 는 class 지칭*/
+        .food {
+            color: black;
+        }
+        /* # -> 는 id 지칭*/
+        #tuna{
+            color: blue;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>웹페이지를 꾸며주는 스타일 시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+    <h1 class="food" id="foodTitle">이번주에 뭐먹지?</h1>
+    <ul>
+        <li class="food" id="salmon">연어</li>
+        <li class="food" id="tuna">참치</li>
+        <li class="food" id="salad">샐러드</li>
+    </ul>
+</body>
+</html>
